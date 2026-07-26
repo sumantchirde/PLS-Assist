@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+chroma_db/
+*.Rhistory
+*.RData
+model_stats.json
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml

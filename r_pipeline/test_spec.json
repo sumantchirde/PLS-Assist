@@ -1,0 +1,20 @@
+{
+  "constructs": [
+    {"name": "Expectation", "type": "reflective",
+     "indicators": ["CUEX1","CUEX2","CUEX3"]},
+    {"name": "Quality",     "type": "reflective",
+     "indicators": ["PERQ1","PERQ2","PERQ3","PERQ4","PERQ5","PERQ6","PERQ7"]},
+    {"name": "Satisfaction","type": "reflective",
+     "indicators": ["CUSA1","CUSA2","CUSA3"]},
+    {"name": "Loyalty",     "type": "reflective",
+     "indicators": ["CUSL1","CUSL2","CUSL3"]}
+  ],
+  "paths": [
+    {"from": "Expectation",  "to": "Quality"},
+    {"from": "Expectation",  "to": "Satisfaction"},
+    {"from": "Quality",      "to": "Satisfaction"},
+    {"from": "Satisfaction", "to": "Loyalty"}
+  ],
+  "csv_path": "/tmp/mobi_test.csv",
+  "stats_output_path": "./model_stats.json"
+}
